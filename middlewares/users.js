@@ -1,7 +1,5 @@
 const users = require('../models/user');
-// middlewares/users.js
 
-const users = require("../models/user");
 const bcrypt = require("bcryptjs"); // Импортируем bcrypt
 
 const findAllUsers = async (req, res, next) => {
@@ -91,7 +89,8 @@ const hashPassword = async (req, res, next) => {
 };
 
 module.exports = { 
-  findAllUsers, 
+  findAllUsers,
+  filterPassword, 
   createUser,
   findUserById,
   updateUser,

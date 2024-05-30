@@ -1,5 +1,3 @@
-// routes/api.js
-
 const authRouter = require("./auth");
 const categoriesRouter = require("./categories");
 const gamesRouter = require("./games");
